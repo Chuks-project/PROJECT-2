@@ -12,3 +12,6 @@ Connecting my VSC Terminal by copying the following link from my AWS EC2 Dashboa
 
 
 ##STEP 1 – INSTALLING THE NGINX WEB SERVER:
+-BBB
+-NN
+-BBB
