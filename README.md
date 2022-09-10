@@ -15,13 +15,16 @@ My Visual Studio Code(VSC) is connected by copying the following link from my AW
 In project-one we used Apache as our webserver. An alternative is Nginx. Nginx is known for its ability to handle multiple open connections effectively.
 
 - To Update your server’s package index run the command below: 
-  sudo apt update
+ 
+ sudo apt update
   
  - To install Nginx run the command below:
-    sudo apt install nginx
+  
+  sudo apt install nginx
     
   - To verify that nginx was successfully installed and is running as a service in Ubuntu, run:
-   sudo systemctl status nginx
+ 
+ sudo systemctl status nginx
    
    - If the Server is active and running, it will appear same as the image below:
    
