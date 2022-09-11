@@ -52,7 +52,7 @@ In project-one we used Apache as our webserver. An alternative is Nginx. Nginx i
       
       
       
-      Step 2 — Installing MySQL
+      # Step 2 — Installing MySQL
       
  - Run the command below to install mysql:
     
@@ -91,7 +91,7 @@ In project-one we used Apache as our webserver. An alternative is Nginx. Nginx i
      
      
      
- Step 3 – Installing PHP
+ # Step 3 – Installing PHP
  
  While Apache embeds the PHP interpreter in each request, Nginx requires an external program to handle PHP processing and act as a bridge between the PHP interpreter itself and the web server. This allows for a better overall performance in most PHP-based websites, but it requires additional configuration. You’ll need to install php-fpm, which stands for “PHP fastCGI process manager”, and tell Nginx to pass PHP requests to this software for processing. Additionally, you’ll need php-mysql, a PHP module that allows PHP to communicate with MySQL-based databases. Core PHP packages will automatically be installed as dependencies.
 
@@ -104,7 +104,7 @@ In project-one we used Apache as our webserver. An alternative is Nginx. Nginx i
   
   
   
-  Step 4 — Configuring Nginx to Use PHP Processor
+  # Step 4 — Configuring Nginx to Use PHP Processor
   
   When using the Nginx web server, we can create server blocks (similar to virtual hosts in Apache) to encapsulate configuration details and host more than one domain on a single server. In this guide, we will use projectLEMP as an example domain name.
 
@@ -185,7 +185,52 @@ sudo echo 'Hello LEMP from hostname' $(curl -s http://169.254.169.254/latest/met
 
     http://<Public-IP-Address>:80
 
-![Hello lemp from Hostname](https://user-images.githubusercontent.com/65022146/189530859-3f548b96-0119-4676-84ff-2a8ae95300d7.png)
+
+ ![Hello lemp from Hostname](https://user-images.githubusercontent.com/65022146/189530859-3f548b96-0119-4676-84ff-2a8ae95300d7.png)
+ 
+ 
+ - As seen above, the text from ‘echo’ command you wrote to index.html file, means your Nginx site is working as expected.
+ 
+ 
+ 
+ 
+ 
+ # Step 5 – Testing PHP with Nginx
+
+ Your LEMP stack should now be completely set up.
+
+At this point, your LAMP stack is completely installed and fully operational.
+
+You can test it to validate that Nginx can correctly hand .php files off to your PHP processor.
+
+You can do this by creating a test PHP file in your document root. 
+
+ - Open a new file called info.php within your document root in your text editor:
+
+     sudo nano /var/www/projectLEMP/info.php
+
+ = Type or paste the following lines into the new file. 
+    <?php
+    phpinfo();
+
+- You can access your website with the Url below:
+
+     ttp://server_domain_or_IP/info.php
+
+- You will see a web page containing detailed information about your server as seen in the image below:
+
+   
+    ![Testing Nginx with PHP](https://user-images.githubusercontent.com/65022146/189535233-e1888232-6220-4077-b5a8-794b5dcce167.png)
+
+
+- The image above contains sensitive information of your environment. So it is standard practice to remove it. Run the command below:
+
+     sudo rm /var/www/your_domain/info.php
+
+
+
+# Step 6 — Retrieving data from MySQL database with PHP
+
 
      
 
