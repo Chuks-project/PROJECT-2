@@ -188,6 +188,8 @@ sudo echo 'Hello LEMP from hostname' $(curl -s http://169.254.169.254/latest/met
 
 
  
+
+ 
  ![Hello lemp from Hostname](https://user-images.githubusercontent.com/65022146/189530859-3f548b96-0119-4676-84ff-2a8ae95300d7.png)
  
  
@@ -312,6 +314,10 @@ TODO
 
 
 ![To do list php](https://user-images.githubusercontent.com/65022146/189538504-02ef55d8-458a-4744-ab34-5ac8321488ee.png)
+
+
+
+- That means your PHP environment is ready to connect and interact with your MySQL server.
 
 
 
