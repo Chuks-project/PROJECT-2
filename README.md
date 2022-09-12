@@ -75,7 +75,7 @@ In project-one we used Apache as our webserver. An alternative is Nginx. Nginx i
 
           exit
           
- - The commands above are reprsented in the image below as:
+ - The commands above are reprsented in the images below as:
      
      
      ![sudo install and secure1](https://user-images.githubusercontent.com/65022146/189516088-72cf0c2d-ff6c-4103-bb9e-0a7010303916.png)
